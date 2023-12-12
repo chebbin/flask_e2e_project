@@ -1,6 +1,9 @@
 # flask_e2e_project
 504 Final Project
 
+# Screenshot of flask app running on port 5000
+![Screen Shot 2023-12-11 at 21 02 25](https://github.com/chebbin/flask_e2e_project/assets/141374142/cb00503e-3456-43a7-8273-993c789fbd97)
+
 # Create a product that uses a database (MySQL) on GCP
 Created a new project in the AHI subfolder called Flask Database Final Project
 Create an instance in SQL

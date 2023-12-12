@@ -21,3 +21,5 @@ Screen shot of table in database
 ![Screen Shot 2023-12-09 at 23 35 31](https://github.com/chebbin/flask_e2e_project/assets/141374142/1895ced2-3a0f-4630-9245-ccd9c5367e8c)
 
 ## How do you insert data into the database?
+
+## What is an ORM?

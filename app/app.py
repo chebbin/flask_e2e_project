@@ -21,8 +21,6 @@ df = df.sort_values(by=['Year', 'Sex', 'Race Ethnicity'], ascending=[False, True
 def index():
     return render_template('base.html')
 
-
-
 @app.route('/data')
 def data(data=df):
     data = data
@@ -31,9 +29,9 @@ def data(data=df):
 @app.route('/api/data')
 def api_data(data=df):
     ## get year from query string
-    variable = request.args.get('type_in_year')
+    input_year = request.args.get('input_year')
     ## filter the dataframe
-    data = data[data['Year'] == int(type_in_year)]
+    data = data[data['Year'] == int(input_year)]
     data = data.head(10)
     return data.to_json(orient='records')
 

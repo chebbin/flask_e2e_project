@@ -37,12 +37,6 @@ def api_data(data=df):
     data = data.head(10)
     return data.to_json(orient='records')
 
-# @app.route('/chart')
-# def chartpage():
-#    df = pd.read_csv ('/home/chevi_ebbin/flask_e2e_project/data/New_York_City_Leading_Causes_of_Death_20231206.csv')
-#    return render_template('chart.html', chart = df)
-
-
 
 if __name__ == '__main__':
     app.run(

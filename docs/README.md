@@ -22,7 +22,7 @@ Screenshot of data shown in the database chevi, table leading_causes_of_death
 ![Screen Shot 2023-12-13 at 15 48 20](https://github.com/chebbin/flask_e2e_project/assets/141374142/7068e995-d60c-4c1c-83c1-3fc6d5ce7dab)
 
 ### Create a product that uses an API or offers an API service (Flask)
-Screen shot showing API endpoint in flask input_year receive json output
+Screen shot showing API endpoint in flask input_year and receive json output
 ![Screen Shot 2023-12-13 at 15 21 47](https://github.com/chebbin/flask_e2e_project/assets/141374142/bc99c4ab-02b9-41e2-b68d-f70eed880f6b)
 
 

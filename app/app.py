@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 from sqlalchemy import create_engine
+import logging
 
 app = Flask(__name__)
 
@@ -9,6 +10,14 @@ db_port = '3306'
 db_username = 'root'
 db_password = 'shlomit1'
 db_name = 'chevi'
+
+#logging.basicConfig(
+#    level=logging.DEBUG,
+#    filename="logs/app.log",
+#    filemode="w",
+#    format='%(levelname)s - %(name)s - %(message)s'
+#)
+
 
 engine = create_engine(f'mysql+pymysql://{db_username}:{db_password}@{db_ip}:{db_port}/{db_name}')
 
@@ -19,7 +28,13 @@ df = df.sort_values(by=['Year', 'Sex', 'Race Ethnicity'], ascending=[False, True
 
 @app.route('/')
 def index():
-    return render_template('base.html')
+    try:
+        logging.debug("success! index page has been accessed")
+        return render_template('base.html')
+    except Exception as e:
+        logging.error(f"an error occurred! {e}")
+#       return "try again"    
+
 
 @app.route('/data')
 def data(data=df):

@@ -29,11 +29,11 @@ df = df.sort_values(by=['Year', 'Sex', 'Race Ethnicity'], ascending=[False, True
 @app.route('/')
 def index():
     try:
-        logging.debug("success! index page has been accessed")
+        logging.debug("You have successfully accessed the index page")
         return render_template('base.html')
     except Exception as e:
         logging.error(f"an error occurred! {e}")
-#       return "try again"    
+        return "try again"    
 
 
 @app.route('/data')

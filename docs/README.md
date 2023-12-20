@@ -25,7 +25,14 @@ Screenshot of data shown in the database chevi, table leading_causes_of_death
 Screen shot showing API endpoint in flask input_year and receive json output
 ![Screen Shot 2023-12-13 at 15 21 47](https://github.com/chebbin/flask_e2e_project/assets/141374142/bc99c4ab-02b9-41e2-b68d-f70eed880f6b)
 
+### Create a product that uses a logger -Sentry.io
+Screen shots showing that an alert was triggered on the sentry io service
+![Screen Shot 2023-12-19 at 20 43 31](https://github.com/chebbin/flask_e2e_project/assets/141374142/173f3966-3c3f-481c-aead-e132e977cdef)
 
+![Screen Shot 2023-12-19 at 20 45 49](https://github.com/chebbin/flask_e2e_project/assets/141374142/486238bc-1146-4817-a928-1ddf4e745851)
+
+Screen shot showing information about the exception that was triggered
+![Screen Shot 2023-12-19 at 20 47 07](https://github.com/chebbin/flask_e2e_project/assets/141374142/6d0c26d4-88b3-4930-af9a-9d8b8d36714f)
 
 
 

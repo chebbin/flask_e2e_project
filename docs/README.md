@@ -34,5 +34,11 @@ Screen shots showing that an alert was triggered on the sentry io service
 Screen shot showing information about the exception that was triggered
 ![Screen Shot 2023-12-19 at 20 47 07](https://github.com/chebbin/flask_e2e_project/assets/141374142/6d0c26d4-88b3-4930-af9a-9d8b8d36714f)
 
+### Create a product that is deployed to the cloud on GCP
+Screen shot in google shell showing that app is deployed
+![Screen Shot 2023-12-19 at 21 29 05](https://github.com/chebbin/flask_e2e_project/assets/141374142/8f953247-8b9f-43be-babb-8ce2b0185ed4)
+
+When clicking on website, screen shows that the service is unavailable
+![Screen Shot 2023-12-19 at 21 33 40](https://github.com/chebbin/flask_e2e_project/assets/141374142/9dd10c52-40d7-4467-9c43-541ab771331e)
 
 

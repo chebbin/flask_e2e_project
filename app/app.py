@@ -37,12 +37,8 @@ df = df.sort_values(by=['Year', 'Sex', 'Race Ethnicity'], ascending=[False, True
 
 @app.route('/')
 def index():
-    try:
-        logging.debug("You have successfully accessed the index page")
-        return render_template('base.html')
-    except Exception as e:
-        logging.error(f"an error occurred! {e}")
-        return "try again"    
+    return render_template('base.html')
+    
 
 @app.route('/error')
 def creating_error():

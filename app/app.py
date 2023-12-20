@@ -2,6 +2,15 @@ from flask import Flask, render_template, request
 import pandas as pd
 from sqlalchemy import create_engine
 import logging
+import sentry_sdk
+
+app = Flask(__name__)
+
+sentry_sdk.init(
+    dsn="https://11b8c50623bb063aaf9faaf524f9ff24@o4506300835692545.ingest.sentry.io/4506425521471488",
+    traces_sample_rate=1.0,
+    profiles_sample_rate=1.0,
+)
 
 app = Flask(__name__)
 
@@ -13,7 +22,7 @@ db_name = 'chevi'
 
 #logging.basicConfig(
 #    level=logging.DEBUG,
-#    filename="logs/app.log",
+#    filename="/home/chevi_ebbin/flask_e2e_project/logs/app.log",
 #    filemode="w",
 #    format='%(levelname)s - %(name)s - %(message)s'
 #)
@@ -34,6 +43,13 @@ def index():
     except Exception as e:
         logging.error(f"an error occurred! {e}")
         return "try again"    
+
+@app.route('/error')
+def creating_error():
+    try:
+        1/0
+    except Exception as e:
+        raise Exception (f'something went wrong: {e}')
 
 
 @app.route('/data')
